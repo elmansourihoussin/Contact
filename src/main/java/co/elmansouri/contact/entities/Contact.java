@@ -22,6 +22,14 @@ public class Contact {
 	private String nom;
 	private String prenom;
 	private String telephone;
+	private String email;
+	private String photo;
+	private String sexe;
+	private String cin;
+	private String cv;
+	private String demandeStage;
+	private String carteNational;
+	private String sujetDeStage;
 	private String note;
 
 }
