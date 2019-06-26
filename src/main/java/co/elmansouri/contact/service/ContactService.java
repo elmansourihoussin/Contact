@@ -1,9 +1,18 @@
 package co.elmansouri.contact.service;
 
+import java.util.List;
+import java.util.Optional;
+
+import co.elmansouri.contact.entities.Contact;
+
 public interface ContactService {
 	
-	public void updatePhoto(String photo);
-	public void updateCv(String cv);
-	public void updateDemandeStage(String demandeDeStage);
+	Contact edit(Contact contact);
+	Contact add(Contact contact);
+	void delete(Long id);
+	void delete(Contact contact);
+	List<Contact> getAll();
+	Optional<Contact> getContact(Long id);
+	
 
 }
